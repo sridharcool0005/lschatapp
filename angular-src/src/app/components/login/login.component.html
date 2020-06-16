@@ -1,0 +1,127 @@
+<div class="container">
+  <h2 class="page-header text-center">Login</h2>
+
+  <form [formGroup]="loginForm"
+    (ngSubmit)="onLoginSubmit()"
+    >
+
+    <div class="form-group">
+      <label for="username">Username</label>
+
+      <input type="text" name="username" class="form-control"
+        id="username"
+        placeholder="Enter your username"
+        formControlName="username"
+        autofocus="true"
+        >
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+
+      <input type="password" name="password" class="form-control"
+        id="password"
+        placeholder="Enter your password"
+        formControlName="password"
+        >
+    </div>
+
+    <div class="form-group">
+      <button [disabled]="loginForm.invalid"
+        type="submit"
+        class="btn btn-primary btn-block"
+        name="login"
+        >Login
+      </button>
+    </div>
+
+    <div class="text-center">
+      <a [routerLink]="['/register']">Don't have an account?</a>
+    </div>
+
+  </form>
+
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+       <img src="https://chat.logicspice.com/img/front/Ls_Chat_white.png">
+        <p>LS Chat started as an alternative to SMS. Our product now supports sending and receiving a variety of media: text, photos, videos, documents, and location, as well as voice calls. People communicate anywhere in the world without barriers.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© Copyright @ 2020 Logicspice. All Rights Reserved
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
